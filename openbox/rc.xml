@@ -437,6 +437,31 @@
     <keybind key="W-KP_5">
       <action name="ToggleMaximizeFull"/>
     </keybind>
+    <keybind key="Print">
+      <action name="Execute">
+        <command>shutter -s</command>
+      </action>
+    </keybind>
+    <keybind key="0xE8">
+      <action name="Execute">
+        <command>brightness-</command>
+      </action>
+    </keybind>
+    <keybind key="0xE9">
+      <action name="Execute">
+        <command>brightness+</command>
+      </action>
+    </keybind>
+    <keybind key="0x7A">
+      <action name="Execute">
+        <command>amixer -D pulse sset Master 5%-</command>
+      </action>
+    </keybind>
+    <keybind key="0x7B">
+      <action name="Execute">
+        <command>amixer -D pulse sset Master 5%+</command>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
