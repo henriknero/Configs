@@ -17,7 +17,7 @@ sudo openvpn --config [your-config] --daemon
 deluged
 deluged-web &
 ```
-3(with nginx). Now exit container and change config for /etc/nginx/sites-available/[default or other (I use default here... lazy)] and possibly same for /etc/nginx/sites-enabled/[default or other config] on the host computer. I use this super-simple config, cant garantee its safe only uses this locally.
+3. (with nginx) Now exit container and change config for /etc/nginx/sites-available/[default or other (I use default here... lazy)] and possibly same for /etc/nginx/sites-enabled/[default or other config] on the host computer. I use this super-simple config, cant garantee its safe only uses this locally.
 ```
 server {
   listen 80 default_server; #IPv4
@@ -35,7 +35,7 @@ Just restart nginx:
 ```
 service nginx restart
 ```
-3(with ufw-natting). On server configure /etc/ufw/before.rules
+3. (with ufw-natting) On server configure /etc/ufw/before.rules
 ```
 *nat
 :PREROUTING ACCEPT [0:0]
