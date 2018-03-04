@@ -1,0 +1,1 @@
+import -window root $HOME/Pictures/Screenshots/screen.$(date +%F_%H-%M-%S).png

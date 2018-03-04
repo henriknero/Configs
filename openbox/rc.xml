@@ -439,7 +439,12 @@
     </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>shutter -s</command>
+        <command>printscreen</command>
+      </action>
+    </keybind>
+    <keybind key="S-Print">
+      <action name="Execute">
+        <command>printpart</command>
       </action>
     </keybind>
     <keybind key="0xE8">
