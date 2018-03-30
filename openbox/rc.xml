@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Smooth</name>
+    <name>Raven-Cyan</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -338,7 +338,7 @@
       </action>
     </keybind>
     <!-- My keybinds -->
-    <keybind key="W-KP_1">
+    <keybind key="C-A-KP_1">
       <action name="MoveResizeTo">
         <!-- put the window in the bottom right corner -->
         <width>50%</width>
@@ -347,7 +347,7 @@
         <y>-0</y>
       </action>
     </keybind>
-    <keybind key="W-KP_4">
+    <keybind key="C-A-KP_4">
       <action name="MoveResizeTo">
         <!-- put the window in the bottom right corner -->
         <width>50%</width>
@@ -356,7 +356,7 @@
         <y>-0</y>
       </action>
     </keybind>
-    <keybind key="W-KP_7">
+    <keybind key="C-A-KP_7">
       <action name="MoveResizeTo">
         <!-- put the window in the bottom right corner -->
         <width>50%</width>
@@ -365,7 +365,7 @@
         <y>0</y>
       </action>
     </keybind>
-    <keybind key="W-KP_8">
+    <keybind key="C-A-KP_8">
       <action name="MoveResizeTo">
         <!-- put the window in the bottom right corner -->
         <width>100%</width>
@@ -374,7 +374,7 @@
         <y>0</y>
       </action>
     </keybind>
-    <keybind key="W-KP_9">
+    <keybind key="C-A-KP_9">
       <action name="MoveResizeTo">
         <!-- put the window in the bottom right corner -->
         <width>50%</width>
@@ -383,7 +383,7 @@
         <y>0</y>
       </action>
     </keybind>
-    <keybind key="W-KP_6">
+    <keybind key="C-A-KP_6">
       <action name="MoveResizeTo">
         <!-- put the window in the bottom right corner -->
         <width>50%</width>
@@ -401,7 +401,7 @@
         <y>0</y>
       </action>
     </keybind>
-    <keybind key="W-KP_3">
+    <keybind key="C-A-KP_3">
       <action name="MoveResizeTo">
         <!-- put the window in the bottom right corner -->
         <width>50%</width>
@@ -410,7 +410,7 @@
         <y>-0</y>
       </action>
     </keybind>
-    <keybind key="W-KP_2">
+    <keybind key="C-A-KP_2">
       <action name="MoveResizeTo">
         <!-- put the window in the bottom right corner -->
         <width>100%</width>
@@ -418,6 +418,9 @@
         <x>0</x>
         <y>-0</y>
       </action>
+    </keybind>
+    <keybind key="C-A-KP_5">
+      <action name="ToggleMaximizeFull"/>
     </keybind>
     <keybind key="C-A-t">
       <action name="Execute">
@@ -431,12 +434,14 @@
     </keybind>
     <keybind key="C-A-l">
       <action name="Execute">
-        <command>i3lock -i /home/henrik/Pictures/Wallpapers/lockscreen.png</command>
+        <command>light-locker-command -l</command>
       </action>
     </keybind>
-    <keybind key="W-KP_5">
-      <action name="ToggleMaximizeFull"/>
-    </keybind>
+    <keybind key="C-A-w">
+      <action name="Execute">
+        <command>xdg-open https://www.google.se</command>
+      </action>
+	</keybind>
     <keybind key="Print">
       <action name="Execute">
         <command>printscreen</command>

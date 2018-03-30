@@ -1,16 +1,21 @@
 accountsservice
 adduser
+afflib-tools
 aircrack-ng
 apparmor
 apt
 apt-utils
+arandr
+autoconf
 base-files
 base-passwd
 bash
 bash-completion
+bc
 bind9-host
 binwalk
 bison
+blueman
 bsdmainutils
 bsdutils
 build-essential
@@ -18,6 +23,8 @@ busybox-initramfs
 busybox-static
 bzip2
 ca-certificates
+catdoc
+cmake
 code
 command-not-found
 command-not-found-data
@@ -49,6 +56,7 @@ e2fslibs
 e2fsprogs
 ed
 eject
+ewf-tools
 fdisk
 feh
 file
@@ -81,7 +89,6 @@ grub-pc
 gzip
 hdparm
 hostname
-i3
 imagemagick
 info
 init
@@ -263,9 +270,13 @@ libxcb1
 libxdmcp6
 libxext6
 libxml2
+libxmu-dev
+libxmu6
 libxmuu1
 libxtables12
 libyaml-0-2
+light-locker
+light-locker-settings
 lightdm
 lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
@@ -280,6 +291,7 @@ lsb-base
 lsb-release
 lshw
 lsof
+lsscsi
 ltrace
 lua5.3
 lxappearance
@@ -326,11 +338,13 @@ psmisc
 pulseaudio-utils
 pylint
 python-apt-common
+python-dev
 python-pip
 python3
 python3-apt
 python3-commandnotfound
 python3-dbus
+python3-dev
 python3-distro-info
 python3-distupgrade
 python3-gdbm
@@ -343,6 +357,7 @@ python3.6
 python3.6-minimal
 radare2
 readline-common
+recordmydesktop
 remmina
 rsync
 rsyslog
@@ -350,7 +365,7 @@ samba
 sed
 sensible-utils
 shared-mime-info
-shutter
+sleuthkit
 spotify-client
 steghide
 strace
@@ -362,6 +377,7 @@ tar
 tasksel
 tcpdump
 telnet
+texify
 texlive-lang-european
 texlive-latex-recommended
 thunar
@@ -402,7 +418,9 @@ wireless-tools
 wireshark-gtk
 xauth
 xbacklight
+xcompmgr
 xdg-user-dirs
+xfce4-power-manager
 xkb-data
 xserver-xorg
 xserver-xorg-input-synaptics
