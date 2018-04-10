@@ -1,0 +1,2 @@
+sudo hashcat -w 3 -m 0 -a 3 -D 2 --force --potfile-disable -i testfile ?l?l?l?l?l?l?l
+sudo hashcat -w 3 -m 0 -a 0 -D 2 --force --potfile-disable testfile rockyou.txt
