@@ -423,7 +423,7 @@
       <action name="ToggleMaximizeFull"/>
     </keybind>
     <keybind key="C-A-t">
-      <action name="Execute">
+	  <action name="Execute">
         <command>gnome-terminal</command>
       </action>
     </keybind>
@@ -835,6 +835,13 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
+  	<application class="*">
+		<focus>yes</focus>
+	</application>
+  	<application name="gnome-terminal-server">
+		<decor>no</decor>
+	</application>
+	
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.

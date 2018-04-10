@@ -1,0 +1,4 @@
+apt-mark showmanual > manual_install_$(date +"%y%m%d")
+cp -r /home/$USER/.config/tint2 .
+cp -r /home/$USER/.config/openbox .
+cp -r /home/$USER/.themes .
