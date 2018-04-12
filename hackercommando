@@ -1,2 +1,4 @@
 sudo hashcat -w 3 -m 0 -a 3 -D 2 --force --potfile-disable -i testfile ?l?l?l?l?l?l?l
 sudo hashcat -w 3 -m 0 -a 0 -D 2 --force --potfile-disable testfile rockyou.txt
+john -format=LM samfile3
+hashcat -m 9700 -a 0 --force hash.txt /home/henrik/Programming/hack2/wordlist/rockyou.txt -r /home/henrik/Programming/hack2/hashcat-4.1.0/rules/best64.rule
