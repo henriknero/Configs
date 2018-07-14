@@ -1,3 +1,2 @@
 #! /bin/bash
-amixer -D pulse sset Master 5%-
-notify-send -t 200 "Volume $(amixer -D pulse sget Master | awk '$0~/%/{print $5}' | tr -d '[]')"
+notify-send -t 200 "Volume $(amixer -D pulse sset Master 5%-| awk '$0~/%/{print $5}' |tr -d '[]'|head -n1)"
