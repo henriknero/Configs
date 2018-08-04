@@ -1,0 +1,6 @@
+#!/bin/bash
+cat manual_installs | while read line 
+do 
+	
+	apt-get -y install $line
+done 

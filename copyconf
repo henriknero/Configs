@@ -1,5 +1,21 @@
-apt-mark showmanual > manual_install_$(date +"%y%m%d")
-cp -r /home/$USER/.config/tint2 .
-cp  /home/$USER/.config/openbox/rc.xml ./openbox/rc_$(date +"%y%m%d").xml
-cp -r /home/$USER/.themes .
-cp /home/$USER/.vimrc ./.vimrc_$(date +"%y%m%d")
+#!/bin/bash
+CONF_FOLDER=$(dirname $0)
+
+#Copy currently manually installed packages, and create updated install script
+apt-mark showmanual | sort > $CONF_FOLDER/manual_installs/manual_install_$(date +"%y%m%d")
+comm -23 $CONF_FOLDER/manual_installs/manual_install_$(date +"%y%m%d") $CONF_FOLDER/baseline_install > $CONF_FOLDER/apt_get_installs
+
+cp -r /home/$USER/.config/tint2 $CONF_FOLDER
+
+#Copy openbox configurations
+
+cp -r /home/$USER/.config/openbox $CONF_FOLDER
+
+#Copy openbox themes
+cp -r /home/$USER/.themes $CONF_FOLDER/themes
+
+#Copy vim configuration file
+cp /home/$USER/.vimrc $CONF_FOLDER/vimconfigs/vimrc_$(date +"%y%m%d")
+cp /home/$USER/.vimrc $CONF_FOLDER/vimconfigs/vimrc
+
+cp -r /etc/apt/sources.list.d $CONF_FOLDER
