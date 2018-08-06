@@ -12,7 +12,7 @@ cp -r /home/$USER/.config/tint2 $CONF_FOLDER
 cp -r /home/$USER/.config/openbox $CONF_FOLDER
 
 #Copy openbox themes
-cp -r /home/$USER/.themes $CONF_FOLDER/themes
+cp -r /home/$USER/.themes/* $CONF_FOLDER/themes
 
 #Copy vim configuration file
 cp /home/$USER/.vimrc $CONF_FOLDER/vimconfigs/vimrc_$(date +"%y%m%d")
