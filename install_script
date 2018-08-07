@@ -1,9 +1,7 @@
 #!/bin/bash
 CONF_FOLDER=$(dirname $0)
 
-cp -r $CONF_FOLDER/sources.list.d /etc/apt/
-
-cat $CONF_FOLDER/manual_installs | while read line 
+cat $CONF_FOLDER/apt_get_installs | while read line 
 do 
 	
 	apt-get -y install $line
@@ -12,7 +10,7 @@ done
 
 cp -r $CONF_FOLDER/tint2 $HOME/.config/
 cp -r $CONF_FOLDER/openbox $HOME/.config/
-mkdir $HOME/.themes; cp -r $CONF_FOLDER/themes $HOME/.themes
+mkdir $HOME/.themes; cp -r $CONF_FOLDER/themes/* $HOME/.themes
 cp $CONF_FOLDER/vimconfigs/vimrc $HOME/.vimrc
 mkdir $HOME/bin; cp $CONF_FOLDER/scripts/* $HOME/bin/
 
@@ -27,4 +25,9 @@ snap install --classic vscode
 snap install spotify
 snap install discord
 
+cat $CONF_FOLDER/vscode_extensions | while read line
+do
+	code --install-extension $line
+done
 
+cp -r $CONF_FOLDER/Wallpapers $HOME/Pictures/

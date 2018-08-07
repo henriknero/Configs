@@ -23,3 +23,7 @@ cp /home/$USER/.vimrc $CONF_FOLDER/vimconfigs/vimrc
 dconf dump /org/gnome/terminal/ > $CONF_FOLDER/gnome_terminal_backup
 
 cp $HOME/.bashrc $CONF_FOLDER/bashrc
+
+code --list-extensions > $CONF_FOLDER/vscode_extensions
+
+cp -r $HOME/Pictures/Wallpapers $CONF_FOLDER/
