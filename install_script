@@ -4,9 +4,11 @@ CONF_FOLDER=$(dirname $0)
 cat $CONF_FOLDER/apt_get_installs | while read line 
 do 
 	
-	apt-get -y install $line
+	sudo apt-get -y install $line
 done 
 
+sudo apt-get -y install lxde
+sudo apt-get install xorg xserver-xorg
 
 cp -r $CONF_FOLDER/tint2 $HOME/.config/
 cp -r $CONF_FOLDER/openbox $HOME/.config/
@@ -19,11 +21,11 @@ dconf load /org/gnome/terminal/ < $CONF_FOLDER/gnome_terminal_backup
 
 cp $CONF_FOLDER/bashrc $HOME/.bashrc
 
-snap install --classic slack
-snap install --classic vscode
+sudo snap install --classic slack
+sudo snap install --classic vscode
 #snap install chromium
-snap install spotify
-snap install discord
+sudo snap install spotify
+sudo snap install discord
 
 cat $CONF_FOLDER/vscode_extensions | while read line
 do

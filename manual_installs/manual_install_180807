@@ -494,6 +494,7 @@ xdg-user-dirs
 xfce4-power-manager
 xkb-data
 xmount
+xorg
 xsel
 xserver-xorg
 xserver-xorg-input-synaptics
