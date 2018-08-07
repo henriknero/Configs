@@ -30,3 +30,5 @@ do
 done
 
 cp -r $CONF_FOLDER/Wallpapers $HOME/Pictures/
+
+cp $CONF_FOLDER/gtk_settings.ini $HOME/.config/gtk-3.0/settings.ini

@@ -27,3 +27,5 @@ cp $HOME/.bashrc $CONF_FOLDER/bashrc
 code --list-extensions > $CONF_FOLDER/vscode_extensions
 
 cp -r $HOME/Pictures/Wallpapers $CONF_FOLDER/
+
+cp $HOME/.config/gtk-3.0/settings.ini $CONF_FOLDER/gtk_settings.ini
