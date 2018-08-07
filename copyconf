@@ -18,4 +18,8 @@ cp -r /home/$USER/.themes/* $CONF_FOLDER/themes
 cp /home/$USER/.vimrc $CONF_FOLDER/vimconfigs/vimrc_$(date +"%y%m%d")
 cp /home/$USER/.vimrc $CONF_FOLDER/vimconfigs/vimrc
 
-cp -r /etc/apt/sources.list.d $CONF_FOLDER
+
+#Store terminalprofile and bashrc
+dconf dump /org/gnome/terminal/ > $CONF_FOLDER/gnome_terminal_backup
+
+cp $HOME/.bashrc $CONF_FOLDER/bashrc

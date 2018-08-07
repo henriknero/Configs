@@ -15,3 +15,16 @@ cp -r $CONF_FOLDER/openbox $HOME/.config/
 mkdir $HOME/.themes; cp -r $CONF_FOLDER/themes $HOME/.themes
 cp $CONF_FOLDER/vimconfigs/vimrc $HOME/.vimrc
 mkdir $HOME/bin; cp $CONF_FOLDER/scripts/* $HOME/bin/
+
+dconf reset -f /org/gnome/terminal/
+dconf load /org/gnome/terminal/ < $CONF_FOLDER/gnome_terminal_backup
+
+cp $CONF_FOLDER/bashrc $HOME/.bashrc
+
+snap install --classic slack
+snap install --classic vscode
+#snap install chromium
+snap install spotify
+snap install discord
+
+
