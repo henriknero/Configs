@@ -7,9 +7,6 @@ do
 	sudo apt-get -y install $line
 done 
 
-sudo apt-get -y install lxde
-sudo apt-get install xorg xserver-xorg
-
 cp -r $CONF_FOLDER/tint2 $HOME/.config/
 cp -r $CONF_FOLDER/openbox $HOME/.config/
 mkdir $HOME/.themes; cp -r $CONF_FOLDER/themes/* $HOME/.themes
