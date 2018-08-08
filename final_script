@@ -1,3 +1,5 @@
+CONF_FOLDER=$(dirname $0)
+
 cat $CONF_FOLDER/vscode_extensions | while read line
 do
 	code --install-extension $line
