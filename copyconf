@@ -29,3 +29,5 @@ code --list-extensions > $CONF_FOLDER/vscode_extensions
 cp -r $HOME/Pictures/Wallpapers $CONF_FOLDER/
 
 cp $HOME/.config/gtk-3.0/settings.ini $CONF_FOLDER/gtk_settings.ini
+
+cp /etc/lightdm/lightdm-gtk-greeter.conf $CONF_FOLDER/
