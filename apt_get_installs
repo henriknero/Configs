@@ -34,7 +34,6 @@ firefox
 flashplugin-installer
 flex
 gdb
-genometools
 gettext
 gir1.2-gtk-3.0
 gmpc-dev
@@ -46,7 +45,6 @@ google-chrome-stable
 gparted
 graphviz
 hashcat
-hddtemp
 hexdiff
 imagemagick
 jnettop
@@ -89,7 +87,6 @@ ncdu
 network-manager
 nmap
 ocl-icd-libopencl1
-octave
 opencl-headers
 openvpn
 p7zip
@@ -112,7 +109,6 @@ python-pip
 qpdfview
 recordmydesktop
 remmina
-respin
 samba
 samdump2
 scalpel
@@ -147,8 +143,6 @@ wireshark-gtk
 xbacklight
 xfce4-power-manager
 xmount
-xorg
 xsel
-xserver-xorg
 xserver-xorg-input-synaptics
 zbar-tools
