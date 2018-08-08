@@ -1,0 +1,6 @@
+cat $CONF_FOLDER/vscode_extensions | while read line
+do
+	code --install-extension $line
+done
+
+cp $CONF_FOLDER/gtk_settings.ini $HOME/.config/gtk-3.0/settings.ini

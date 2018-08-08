@@ -24,11 +24,6 @@ sudo snap install --classic vscode
 sudo snap install spotify
 sudo snap install discord
 
-cat $CONF_FOLDER/vscode_extensions | while read line
-do
-	code --install-extension $line
-done
-
 cp -r $CONF_FOLDER/Wallpapers $HOME/Pictures/
 
-cp $CONF_FOLDER/gtk_settings.ini $HOME/.config/gtk-3.0/settings.ini
+#Restart behövs här
