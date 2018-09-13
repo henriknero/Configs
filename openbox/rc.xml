@@ -270,7 +270,7 @@
         <command>gnome-screenshot -i -a</command>
       </action>
     </keybind>
-        <!-- Launch scrot when Print is pressed -->
+    <!-- Launch scrot when Print is pressed -->
     <keybind key="Print">
       <action name="Execute">
         <command>gnome-screenshot -i</command>
@@ -327,7 +327,6 @@
         <direction>down</direction>
       </action>
     </keybind>
-
     <!-- My keybinds -->
     <!-- Keybinds for Moving windows -->
     <keybind key="C-A-KP_1">
@@ -402,11 +401,10 @@
         <monitor>next</monitor>
       </action>
     </keybind>
-
     <!-- Shortcut commands -->
     <keybind key="C-A-t">
-	  <action name="Execute">
-        <command>gnome-terminal</command>
+      <action name="Execute">
+        <command>terminator</command>
       </action>
     </keybind>
     <keybind key="W-s">
@@ -419,7 +417,6 @@
         <command>light-locker-command -l</command>
       </action>
     </keybind>
-
     <!-- Change brightness -->
     <keybind key="0xE8">
       <action name="Execute">
@@ -431,7 +428,6 @@
         <command>brightness+</command>
       </action>
     </keybind>
-
     <!-- Change volume -->
     <keybind key="0x7A">
       <action name="Execute">
@@ -806,13 +802,15 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-  	<application class="*">
-		<focus>yes</focus>
-	</application>
-  	<application name="gnome-terminal-server">
-		<decor>no</decor>
-	</application>
-	
+    <application class="*">
+      <focus>yes</focus>
+    </application>
+    <application name="gnome-terminal-server">
+      <decor>no</decor>
+    </application>
+    <application name="terminator">
+      <decor>no</decor>
+    </application>
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.
