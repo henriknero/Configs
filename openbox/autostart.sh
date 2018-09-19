@@ -11,3 +11,4 @@ if [ "$VGA"=="connected" ] && [ "$HMDI"=="connected" ]
 then
 	$HOME/.screenlayout/hemma.sh &
 fi
+synergys --config $HOME/.synergy.conf &

@@ -404,12 +404,17 @@
     <!-- Shortcut commands -->
     <keybind key="C-A-t">
       <action name="Execute">
-        <command>terminator</command>
+        <command>gnome-terminal</command>
       </action>
     </keybind>
     <keybind key="W-s">
       <action name="Execute">
         <command>gnome-do</command>
+        </action>
+    </keybind>
+    <keybind key="W-i">
+      <action name="Execute">
+        <command>language</command>
       </action>
     </keybind>
     <keybind key="C-A-l">
