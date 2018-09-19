@@ -1,0 +1,7 @@
+#! /bin/sh
+LANG=$(setxkbmap -query | grep "se$")
+if [ $? -eq 0 ]; then
+    setxkbmap gb
+else
+    setxkbmap se
+fi
