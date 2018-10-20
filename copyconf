@@ -1,33 +1,82 @@
 #!/bin/bash
-CONF_FOLDER=$(dirname $0)
 
-#Copy currently manually installed packages, and create updated install script
-apt-mark showmanual | sort > $CONF_FOLDER/manual_installs/manual_install_$(date +"%y%m%d")
-comm -23 $CONF_FOLDER/manual_installs/manual_install_$(date +"%y%m%d") $CONF_FOLDER/baseline_install > $CONF_FOLDER/apt_get_installs
+HELP="Usage: $0 [args]
+    -f {dirname}: Copies files to the specified folder
+    -o : Copies .config/openbox
+    -i : Copies .config/i3 and .config/i3status
+    -s : Copies .vimrc, .bashrc and visual Studios Code extensions
+    -a : Combines -o -i -s
+    -h : Shows this message"
+CONF_FOLDER=$(dirname $0)/confs
+mkdir -p $CONF_FOLDER
 
-cp -r /home/$USER/.config/tint2 $CONF_FOLDER
+openbox() {
+    #Copy openbox configurations and themes
+    cp -r /home/$USER/.config/openbox $CONF_FOLDER
+    mkdir -p $CONF_FOLDER/themes
+    cp -r /home/$USER/.themes/* $CONF_FOLDER/themes
+}
+i3() {
+    mkdir -p $CONF_FOLDER/i3
+    cp -r /home/$USER/.config/i3 $CONF_FOLDER/i3
+    cp -r /home/$USER/.config/i3status $CONF_FOLDER/i3
 
-#Copy openbox configurations
+}
+apps() {
+    #Copy currently manually installed packages, and create updated install script
+    mkdir -p $CONF_FOLDER/manual_installs/
+    apt-mark showmanual | sort > $CONF_FOLDER/manual_installs/manual_install_$(date +"%y%m%d")
+    apt-mark showmanual | sort > $CONF_FOLDER/apt_get_installs
+}
+editor_terminal_etc() {
+    #Copy vim configuration file and bashrc, vcode extenstions
+    mkdir -p $CONF_FOLDER/vimconfigs
+    cp /home/$USER/.vimrc $CONF_FOLDER/vimconfigs/vimrc_$(date +"%y%m%d")
+    cp /home/$USER/.vimrc $CONF_FOLDER/vimconfigs/vimrc
 
-cp -r /home/$USER/.config/openbox $CONF_FOLDER
+    cp $HOME/.bashrc $CONF_FOLDER/bashrc
+    code --list-extensions > $CONF_FOLDER/vscode_extensions
+    
+}
+while getopts "isaohf:" arg; do   
+    case $arg in
+		h)
+			echo "${HELP}"
+            exit 0
+			;;
+        o)
+            openbox
+            ;;
+        i)
+            i3
+            ;;
+        s)
+            editor_terminal_etc
+            ;;
+        a)
+            openbox
+            apps
+            editor_terminal_etc
+            i3
+            ;;
+		f)
+            CONF_FOLDER=$OPTARG
+			;;
+        *)
+            echo -e "$HELP"
+            exit -1
+            ;;
+	esac
+done
+if [ $# -eq 0 ] 
+then
+    echo "$HELP"
+    exit 1
+fi
+#cp -r /home/$USER/.config/tint2 $CONF_FOLDER
 
-#Copy openbox themes
-cp -r /home/$USER/.themes/* $CONF_FOLDER/themes
-
-#Copy vim configuration file
-cp /home/$USER/.vimrc $CONF_FOLDER/vimconfigs/vimrc_$(date +"%y%m%d")
-cp /home/$USER/.vimrc $CONF_FOLDER/vimconfigs/vimrc
 
 
-#Store terminalprofile and bashrc
-dconf dump /org/gnome/terminal/ > $CONF_FOLDER/gnome_terminal_backup
+#cp $HOME/.config/gtk-3.0/settings.ini $CONF_FOLDER/gtk_settings.ini
 
-cp $HOME/.bashrc $CONF_FOLDER/bashrc
-
-code --list-extensions > $CONF_FOLDER/vscode_extensions
-
-cp -r $HOME/Pictures/Wallpapers $CONF_FOLDER/
-
-cp $HOME/.config/gtk-3.0/settings.ini $CONF_FOLDER/gtk_settings.ini
-
-cp /etc/lightdm/lightdm-gtk-greeter.conf $CONF_FOLDER/
+#cp /etc/lightdm/lightdm-gtk-greeter.conf $CONF_FOLDER/

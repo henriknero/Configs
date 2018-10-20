@@ -1,5 +1,6 @@
 set autoindent
 syntax enable
+colorscheme slate
 set cursorline
 set wildmenu
 set incsearch

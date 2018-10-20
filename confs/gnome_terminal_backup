@@ -22,9 +22,12 @@ use-theme-colors=true
 [legacy/profiles:/:ef61fc17-85f7-48c8-bebc-03104a413d83]
 foreground-color='#4a4a45454343'
 visible-name='3024 Day'
-palette=['#090903030000', '#dbdb2d2d2020', '#0101a2a25252', '#fdfdeded0202', '#0101a0a0e4e4', '#a1a16a6a9494', '#b5b5e4e4f4f4', '#a5a5a2a2a2a2', '#5c5c58585555', '#e8e8bbbbd0d0', '#3a3a34343232', '#4a4a45454343', '#80807d7d7c7c', '#d6d6d5d5d4d4', '#cdcdabab5353', '#f7f7f7f7f7f7']
+login-shell=false
+palette=['rgb(0,0,0)', 'rgb(205,0,0)', 'rgb(0,205,0)', 'rgb(205,205,0)', 'rgb(0,0,238)', 'rgb(205,0,205)', 'rgb(0,205,205)', 'rgb(229,229,229)', 'rgb(127,127,127)', 'rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(255,255,0)', 'rgb(92,92,255)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)']
+custom-command='teminator'
+use-custom-command=false
+use-theme-colors=true
 use-transparent-background=true
-use-theme-colors=false
 use-theme-background=false
 bold-color-same-as-fg=true
 bold-color='#a5a5a2a2a2a2'

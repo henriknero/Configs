@@ -404,7 +404,7 @@
     <!-- Shortcut commands -->
     <keybind key="C-A-t">
       <action name="Execute">
-        <command>gnome-terminal</command>
+        <command>terminator</command>
       </action>
     </keybind>
     <keybind key="W-s">
