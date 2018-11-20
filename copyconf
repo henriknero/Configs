@@ -2,6 +2,7 @@
 
 HELP="Usage: $0 [args]
     -f {dirname}: Copies files to the specified folder
+    -m : Copies installed apps
     -o : Copies .config/openbox
     -i : Copies .config/i3 and .config/i3status
     -s : Copies .vimrc, .bashrc and visual Studios Code extensions
@@ -38,7 +39,7 @@ editor_terminal_etc() {
     code --list-extensions > $CONF_FOLDER/vscode_extensions
     
 }
-while getopts "isaohf:" arg; do   
+while getopts "misaohf:" arg; do   
     case $arg in
 		h)
 			echo "${HELP}"
@@ -52,6 +53,9 @@ while getopts "isaohf:" arg; do
             ;;
         s)
             editor_terminal_etc
+            ;;
+        m)
+            apps
             ;;
         a)
             openbox
