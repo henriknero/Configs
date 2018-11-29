@@ -1,0 +1,21 @@
+#! /bin/sh
+
+export DISPLAY=:0
+export XAUTHORITY=/home/henrik/.Xauthority
+sleep 5
+
+HDMI=$(cat /sys/class/drm/card0-HDMI-A-2/status)
+VGA=$(cat /sys/class/drm/card0-DP-1/status)
+
+if [ "$HDMI" = "connected" ] && [ "$VGA" = "connected" ]
+then
+	/home/henrik/.screenlayout/hemma.sh
+elif [ "$HDMI" = "connected" ]
+then
+    xrandr --output HDMI-2 --primary --auto --left-of eDP-1
+elif [ "$VGA" = "connected" ]
+then
+     xrandr --output DP-1 --primary --auto --left-of eDP-1
+else
+	/home/henrik/.screenlayout/solo.sh
+fi

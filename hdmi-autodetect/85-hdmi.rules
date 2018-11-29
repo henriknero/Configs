@@ -1,0 +1,3 @@
+#! /bin/sh
+
+ACTION=="change", TAG+="systemd", RUN+="/bin/systemctl start monitors.service" 
