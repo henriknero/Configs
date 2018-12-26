@@ -13,7 +13,7 @@ exec --no-startup-id synclient HorizScrollDelta=-75 VertScrollDelta=-75 HorizTwo
 exec --no-startup-id synclient PalmDetect=1
 exec --no-startup-id syndaemon -i 1 -d -t -K
 exec --no-startup-id feh --bg-scale /home/henrik/Pictures/Wallpapers/background.png
-exec --no-startup-id compton -b
+exec --no-startup-id compton
 set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -36,6 +36,10 @@ bindsym XF86AudioRaiseVolume exec /home/henrik/bin/increase-volume
 
 #Custom Desktop movement
 bindsym $mod+o move workspace to output right
+
+##Scratchpad
+bindsym $mod+Shift+minus scratchpad show
+bindsym $mod+minus move scratchpad
 
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left

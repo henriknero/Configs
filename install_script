@@ -1,15 +1,11 @@
 #!/bin/bash
-CONF_FOLDER=$(dirname $0)
+CONF_FOLDER="$(dirname $0)/confs"
 
 cat $CONF_FOLDER/apt_get_installs | while read line 
 do 
-	
 	sudo apt-get -y install $line
 done 
 
-cp -r $CONF_FOLDER/tint2 $HOME/.config/
-cp -r $CONF_FOLDER/openbox $HOME/.config/
-mkdir $HOME/.themes; cp -r $CONF_FOLDER/themes/* $HOME/.themes
 cp $CONF_FOLDER/vimconfigs/vimrc $HOME/.vimrc
 mkdir $HOME/bin; cp $CONF_FOLDER/scripts/* $HOME/bin/
 sudo cp $CONF_FOLDER/lightdm-gtk-greeter.conf /etc/lightdm/lightdm-gtk-greeter.conf
@@ -21,10 +17,8 @@ cp $CONF_FOLDER/bashrc $HOME/.bashrc
 
 sudo snap install --classic slack
 sudo snap install --classic vscode
-#snap install chromium
 sudo snap install spotify
 sudo snap install discord
 
 cp -r $CONF_FOLDER/Wallpapers $HOME/Pictures/
 
-#Restart behövs här

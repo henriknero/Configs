@@ -6,7 +6,7 @@ HELP="Usage: $0 [args]
     -o : Copies .config/openbox
     -i : Copies .config/i3 and .config/i3status
     -s : Copies .vimrc, .bashrc and visual Studios Code extensions
-    -a : Combines -o -i -s
+    -a : Combines -o -i -s and -m
     -h : Shows this message"
 CONF_FOLDER=$(dirname $0)/confs
 mkdir -p $CONF_FOLDER
