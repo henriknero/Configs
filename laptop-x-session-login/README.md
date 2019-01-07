@@ -1,3 +1,7 @@
+# Laptop login to X-Session using x11vnc
+A small hack I use to be able to log in to my laptop that is in an inconvenient spot when docked using another computer. The usecase is quite limited but the simplicity of it makes it a good solution to quickly setup a vnc-server on my i3-equipped laptop.
+
+## Instructions
 1. Create functioning ssh connection to the computer(server) on which you wish to start the X-Session on. (I use a identity file with no password, as this work well for my usecase.)
 2. On the server install x11vnc, if using ubuntu:
 ```
