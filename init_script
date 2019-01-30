@@ -1,3 +1,3 @@
 #!/bin/bash
 sudo apt-get update
-sudo apt install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings openbox obconf obmenu wicd ubuntu-drivers-common mesa-utils mesa-utils-extra compton xorg xserver-xorg nautilus gnome-terminal intel-microcode git
+sudo apt install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings i3 wicd ubuntu-drivers-common mesa-utils mesa-utils-extra compton xorg xserver-xorg nautilus gnome-terminal intel-microcode
