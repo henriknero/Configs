@@ -37,6 +37,7 @@ editor_terminal_etc() {
 
     cp $HOME/.bashrc $CONF_FOLDER/bashrc
     code --list-extensions > $CONF_FOLDER/vscode_extensions
+    dconf dump /org/gnome/terminal/ > $CONF_FOLDER/gnome_terminal_backup
     
 }
 while getopts "misaohf:" arg; do   
