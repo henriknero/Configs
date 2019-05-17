@@ -12,8 +12,11 @@ exec --no-startup-id synclient NaturalScrolling=1 VertScrollDelta=-113
 exec --no-startup-id synclient HorizScrollDelta=-75 VertScrollDelta=-75 HorizTwoFingerScroll=1
 exec --no-startup-id synclient PalmDetect=1
 exec --no-startup-id syndaemon -i 1 -d -t -K
-exec --no-startup-id feh --bg-scale /home/henrik/Pictures/Wallpapers/background.png
+exec --no-startup-id wicd-client --tray
+exec --no-startup-id volumeicon
+exec --no-startup-id feh --bg-scale /home/henrik/Pictures/Wallpapers/background.jpg
 exec --no-startup-id compton
+exec --no-startup-id conky -b
 set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -27,12 +30,13 @@ gaps outer 2
 
 #Custom keybinds
 bindsym $mod+p exec flameshot gui
-bindsym $mod+CONTROL+l exec i3lock -i /home/henrik/Pictures/Wallpapers/lockscreen.png
+bindsym $mod+CONTROL+l exec betterlockscreen -l dim
 bindsym $mod+Control+i exec /home/henrik/bin/language
 bindsym XF86MonBrightnessUp exec /usr/local/bin/brightness+
 bindsym XF86MonBrightnessDown exec /usr/local/bin/brightness-
 bindsym XF86AudioLowerVolume exec /home/henrik/bin/decrease-volume
 bindsym XF86AudioRaiseVolume exec /home/henrik/bin/increase-volume
+bindsym XF86TouchpadToggle exec /home/henrik/bin/toggle-touchpad
 
 #Custom Desktop movement
 bindsym $mod+o move workspace to output right

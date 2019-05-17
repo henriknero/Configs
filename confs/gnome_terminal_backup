@@ -8,7 +8,8 @@ theme-variant='system'
 toggle-menubar='<Super>t'
 
 [legacy/profiles:]
-list=['ef61fc17-85f7-48c8-bebc-03104a413d83', 'bd841dec-6f36-4dfe-be0b-d023b29210d1']
+list=['7c041e54-3040-4d83-825a-3fff911200a3', '2df55660-b159-4d9a-9d92-e22dbc719561']
+default='2df55660-b159-4d9a-9d92-e22dbc719561'
 
 [legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 background-color='rgb(0,43,54)'
@@ -19,29 +20,36 @@ use-transparent-background=true
 visible-name='test'
 use-theme-colors=true
 
-[legacy/profiles:/:ef61fc17-85f7-48c8-bebc-03104a413d83]
-foreground-color='#4a4a45454343'
-visible-name='3024 Day'
-login-shell=false
-palette=['rgb(0,0,0)', 'rgb(205,0,0)', 'rgb(0,205,0)', 'rgb(205,205,0)', 'rgb(0,0,238)', 'rgb(205,0,205)', 'rgb(0,205,205)', 'rgb(229,229,229)', 'rgb(127,127,127)', 'rgb(255,0,0)', 'rgb(0,255,0)', 'rgb(255,255,0)', 'rgb(92,92,255)', 'rgb(255,0,255)', 'rgb(0,255,255)', 'rgb(255,255,255)']
-custom-command='teminator'
-use-custom-command=false
-use-theme-colors=true
-use-transparent-background=true
-use-theme-background=false
-bold-color-same-as-fg=true
-bold-color='#a5a5a2a2a2a2'
-background-color='#f7f7f7f7f7f7'
-background-transparency-percent=10
-
-[legacy/profiles:/:bd841dec-6f36-4dfe-be0b-d023b29210d1]
-foreground-color='#a5a5a2a2a2a2'
-visible-name='3024 Night'
-palette=['#090903030000', '#dbdb2d2d2020', '#0101a2a25252', '#fdfdeded0202', '#0101a0a0e4e4', '#a1a16a6a9494', '#b5b5e4e4f4f4', '#a5a5a2a2a2a2', '#5c5c58585555', '#e8e8bbbbd0d0', '#3a3a34343232', '#4a4a45454343', '#80807d7d7c7c', '#d6d6d5d5d4d4', '#cdcdabab5353', '#f7f7f7f7f7f7']
-use-transparent-background=true
+[legacy/profiles:/:7c041e54-3040-4d83-825a-3fff911200a3]
+foreground-color='#3b3b23232222'
+visible-name='Novel'
+palette=['#000000000000', '#cccc00000000', '#000096960000', '#d0d06b6b0000', '#00000000cccc', '#cccc0000cccc', '#00008787cccc', '#cccccccccccc', '#808080808080', '#cccc00000000', '#000096960000', '#d0d06b6b0000', '#00000000cccc', '#cccc0000cccc', '#00008787cccc', '#ffffffffffff']
+use-system-font=true
+cursor-colors-set=false
 use-theme-colors=false
+use-transparent-background=true
+font='Monospace 10'
+use-theme-transparency=false
+allow-bold=true
 use-theme-background=false
 bold-color-same-as-fg=true
-bold-color='#a5a5a2a2a2a2'
-background-color='#090903030000'
-background-transparency-percent=10
+bold-color='#3b3b23232222'
+background-color='#dfdfdbdbc3c3'
+background-transparency-percent=22
+
+[legacy/profiles:/:2df55660-b159-4d9a-9d92-e22dbc719561]
+foreground-color='#fffffafaf4f4'
+visible-name='Argonaut'
+palette=['#232323232323', '#ffff00000f0f', '#8c8ce1e10b0b', '#ffffb9b90000', '#00008d8df8f8', '#6d6d4343a6a6', '#0000d8d8ebeb', '#ffffffffffff', '#444444444444', '#ffff27274040', '#ababe1e15b5b', '#ffffd2d24242', '#00009292ffff', '#9a9a5f5febeb', '#6767fffff0f0', '#ffffffffffff']
+use-system-font=true
+cursor-colors-set=false
+use-theme-colors=false
+use-transparent-background=true
+font='Monospace 10'
+use-theme-transparency=false
+allow-bold=true
+use-theme-background=false
+bold-color-same-as-fg=true
+bold-color='#fffffafaf4f4'
+background-color='#0e0e10101919'
+background-transparency-percent=11
