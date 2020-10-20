@@ -1,55 +1,78 @@
-[legacy]
-mnemonics-enabled=false
-schema-version=uint32 3
-default-show-menubar=false
-theme-variant='system'
-
 [legacy/keybindings]
-toggle-menubar='<Super>t'
+switch-to-tab-1='<Super>1'
+switch-to-tab-2='<Super>2'
+switch-to-tab-3='<Super>3'
+switch-to-tab-4='<Super>4'
+switch-to-tab-5='<Super>5'
+switch-to-tab-6='<Super>6'
+switch-to-tab-7='<Super>7'
+switch-to-tab-10='<Super>0'
+switch-to-tab-8='<Super>8'
+switch-to-tab-9='<Super>9'
 
 [legacy/profiles:]
-list=['7c041e54-3040-4d83-825a-3fff911200a3', '2df55660-b159-4d9a-9d92-e22dbc719561']
-default='2df55660-b159-4d9a-9d92-e22dbc719561'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', 'be946cc5-e8f8-4856-a50a-8e0e26697476', '08efec39-e42c-4e21-a991-45d7de95c0bf', '83fe653d-ccc6-4bcf-8c26-74f36689e2de', 'ebb35c19-687a-4006-b01d-0ccc2dbf3046']
+default='ebb35c19-687a-4006-b01d-0ccc2dbf3046'
 
-[legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
-background-color='rgb(0,43,54)'
-background-transparency-percent=10
-palette=['rgb(46,52,54)', 'rgb(204,0,0)', 'rgb(6,154,12)', 'rgb(196,160,0)', 'rgb(52,101,164)', 'rgb(117,80,123)', 'rgb(6,152,154)', 'rgb(211,215,207)', 'rgb(85,87,83)', 'rgb(239,41,41)', 'rgb(138,226,52)', 'rgb(252,233,79)', 'rgb(114,159,207)', 'rgb(173,127,168)', 'rgb(52,226,226)', 'rgb(238,238,236)']
-foreground-color='rgb(238,238,236)'
-use-transparent-background=true
-visible-name='test'
-use-theme-colors=true
-
-[legacy/profiles:/:7c041e54-3040-4d83-825a-3fff911200a3]
-foreground-color='#3b3b23232222'
-visible-name='Novel'
-palette=['#000000000000', '#cccc00000000', '#000096960000', '#d0d06b6b0000', '#00000000cccc', '#cccc0000cccc', '#00008787cccc', '#cccccccccccc', '#808080808080', '#cccc00000000', '#000096960000', '#d0d06b6b0000', '#00000000cccc', '#cccc0000cccc', '#00008787cccc', '#ffffffffffff']
-use-system-font=true
-cursor-colors-set=false
-use-theme-colors=false
-use-transparent-background=true
-font='Monospace 10'
-use-theme-transparency=false
-allow-bold=true
-use-theme-background=false
-bold-color-same-as-fg=true
-bold-color='#3b3b23232222'
-background-color='#dfdfdbdbc3c3'
-background-transparency-percent=22
-
-[legacy/profiles:/:2df55660-b159-4d9a-9d92-e22dbc719561]
+[legacy/profiles:/:08efec39-e42c-4e21-a991-45d7de95c0bf]
 foreground-color='#fffffafaf4f4'
 visible-name='Argonaut'
+scrollbar-policy='never'
 palette=['#232323232323', '#ffff00000f0f', '#8c8ce1e10b0b', '#ffffb9b90000', '#00008d8df8f8', '#6d6d4343a6a6', '#0000d8d8ebeb', '#ffffffffffff', '#444444444444', '#ffff27274040', '#ababe1e15b5b', '#ffffd2d24242', '#00009292ffff', '#9a9a5f5febeb', '#6767fffff0f0', '#ffffffffffff']
-use-system-font=true
-cursor-colors-set=false
-use-theme-colors=false
 use-transparent-background=true
-font='Monospace 10'
+highlight-colors-set=true
+use-theme-colors=false
 use-theme-transparency=false
 allow-bold=true
 use-theme-background=false
 bold-color-same-as-fg=true
 bold-color='#fffffafaf4f4'
 background-color='#0e0e10101919'
-background-transparency-percent=11
+background-transparency-percent=10
+highlight-background-color='#'
+highlight-foreground-color='#'
+
+[legacy/profiles:/:ebb35c19-687a-4006-b01d-0ccc2dbf3046]
+foreground-color='#d6d6dbdbe5e5'
+visible-name='Brogrammer'
+scrollbar-policy='never'
+palette=['#1f1f1f1f1f1f', '#f8f811111818', '#2d2dc5c55e5e', '#ececbaba0f0f', '#2a2a8484d2d2', '#4e4e5a5ab7b7', '#10108181d6d6', '#d6d6dbdbe5e5', '#d6d6dbdbe5e5', '#dede35352e2e', '#1d1dd3d36161', '#f3f3bdbd0909', '#10108181d6d6', '#53535050b9b9', '#0f0f7d7ddbdb', '#ffffffffffff']
+use-system-font=true
+use-transparent-background=true
+highlight-colors-set=false
+use-theme-colors=false
+font='Terminus 12'
+use-theme-transparency=false
+allow-bold=true
+use-theme-background=false
+bold-color-same-as-fg=true
+bold-color='#d6d6dbdbe5e5'
+background-color='#131313131313'
+background-transparency-percent=10
+highlight-background-color='#'
+highlight-foreground-color='#'
+
+[legacy/profiles:/:83fe653d-ccc6-4bcf-8c26-74f36689e2de]
+foreground-color='#d0d0d0d0d0d0'
+visible-name='Afterglow'
+scrollbar-policy='never'
+palette=['#151515151515', '#a5a53c3c2323', '#7b7b92924646', '#d3d3a0a04d4d', '#6c6c9999bbbb', '#9f9f4e4e8585', '#7d7dd6d6cfcf', '#d0d0d0d0d0d0', '#505050505050', '#a5a53c3c2323', '#7b7b92924646', '#d3d3a0a04d4d', '#54547c7c9999', '#9f9f4e4e8585', '#7d7dd6d6cfcf', '#f5f5f5f5f5f5']
+use-transparent-background=true
+highlight-colors-set=true
+use-theme-colors=false
+use-theme-transparency=false
+allow-bold=true
+use-theme-background=false
+bold-color-same-as-fg=true
+bold-color='#d0d0d0d0d0d0'
+background-color='#222222222222'
+background-transparency-percent=10
+highlight-background-color='#'
+highlight-foreground-color='#'
+
+[legacy/profiles:/:be946cc5-e8f8-4856-a50a-8e0e26697476]
+visible-name='asd'
+
+[legacy]
+schema-version=uint32 3
+default-show-menubar=false
